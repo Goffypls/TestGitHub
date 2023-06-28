@@ -1,15 +1,32 @@
 header {
-    background-color: black;
+    background: linear-gradient(45deg,rgb(243, 201, 208),lightcoral,lightpink,pink,coral);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease infinite;
     color:white;
     text-align: center;
-    padding: 20px;
+    border: solid 5px black;
+    padding: 40px;
     display:flex;
+    justify-content: space-between;
+  }
+  @keyframes cambiar {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50% ;}
+    100%{background-position: 0% 50%;}
+    
   }
   nav ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background: linear-gradient(45deg,rgb(243, 201, 208),lightcoral,lightpink,pink,coral);
+  background-size: 400% 400%;
+  position: relative;
+  animation: cambiar 10s ease infinite;
 }
 nav li {
     display: inline-block;
@@ -22,16 +39,38 @@ nav li {
     justify-content: flex-end;
     color: #fff;
     text-decoration: none;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
     padding: 5px;
   }
   nav a:hover {
-    color: lightgreen;
+    transition: 2s;
+    transition-delay: 0,5s;
+    color: black;
   }
 .container{
     max-width: 800px;
     margin:auto;
     padding:20px;
     }
+.container-about{
+      max-width: 800px;
+      margin:auto;
+      padding:20px;
+      }   
+.container-about>h1{
+  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.container-about>p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font: bold;
+}       
     .row{
         display:flex;
         flex-wrap:wrap;
@@ -73,4 +112,9 @@ nav li {
     justify-content: center;
     align-items: center;
     background: lightgray;
+  }
+  .greeting{
+    text-align: center;
+    font-size: 20px;
+    font:bolder;
   }
