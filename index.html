@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi primer pagina web</title>
+    <link rel="stylesheet" href="style.css">
+    <header class="container-nav">
+    <nav class="navbar" role="navigation">
+        <ul>
+            <li><b>Mi primer pagina</b></li>
+            <li><a href="services.html">Mis servicios</a></li>
+            <li><a href="contact.html">Contactanos</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+        </ul>
+    </nav>
+</header>
+</head>
+<body>
+
+<main>
+    <div class="container" style="align-content: center;">
+        <div class="row" style="display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;">
+        <section>
+        <h1>¡Bienvenidos a mi primer pagina web!</h1>
+         <h2>Presentacion</h2>
+            <p>Soy mariano y esta es mi primera pagina</p>
+         <p>Estoy aprendiendo desarrollo web para crear sitios web</p>
+        </section>
+        <section>
+         <h2>Lo que se viene...</h2>
+         <p>A lo largo de este curso aprendere HTML CSS y JS.</p>
+        </section> 
+        </div>
+        <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <button id="miBoton" onClick="showAlert()" aria-label="Haz click en mi!">Hola!</button>
+        </div>
+</div>
+    
+          <div style="display:flex;flex-wrap: nowrap;flex-direction: row; align-items: center;justify-content: space-around;">
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=IPyi3hDCvCQ" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <video width="560" height="315" src="video.mp4" controls></video>
+        </div>  
+   
+</main>
+</br></br></br></br></br></br></br></br></br></br></br></br>
+<footer>
+    <p>Este es el footer de mi pagina!</p>
+    <button onclick="showAlert()">Boton de pie!</button>
+</footer>
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
